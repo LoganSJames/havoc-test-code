@@ -5,7 +5,7 @@ var timeline = [];
 timeline.push({
   type: 'html-button-response',
   stimulus: 'Click to begin',
-  choices: ['Begin'],
+  choices: ['<p style="font-size:5vw; color:green;">BEGIN</p>'],
 });
 
 var mammal_stim = jsPsych.randomization.sampleWithReplacement(mammal_list, 4);
