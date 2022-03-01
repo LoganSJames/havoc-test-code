@@ -1,0 +1,4 @@
+"rt","stimulus","response","trial_type","trial_index","time_elapsed","internal_node_id","selection","image_1","image_2","audio_1","audio_2","order","category","species"
+"1417.1000001430511","Click to begin","0","html-button-response","0","1432","0.0-0.0","","","","","","","",""
+"905","","","animal-sounds","1","10988","0.0-1.0","A","animal-sounds/img/bird.svg","animal-sounds/img/bird.svg","animal-sounds/sounds/animalSounds_158.mp3","animal-sounds/sounds/animalSounds_159.mp3","AB","Bird","Song sparrow"
+"555","","","animal-sounds","2","15606","0.0-2.0","B","animal-sounds/img/frog.svg","animal-sounds/img/frog.svg","animal-sounds/sounds/animalSounds_011.mp3","animal-sounds/sounds/animalSounds_012.mp3","AB","Frog","Hourglass treefrog"

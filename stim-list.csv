@@ -1,0 +1,135 @@
+Sound1,Sound2,Quality,Species,Category
+animalSounds_001,animalSounds_002,AB,Zebra finch,Bird
+animalSounds_003,animalSounds_004,AB,Pacific field cricket,Insect
+animalSounds_005,animalSounds_006,AB,Gray treefrog,Frog
+animalSounds_007,animalSounds_008,AB,Gray treefrog,Frog
+animalSounds_009,animalSounds_010,AB,Cope's gray treefrog,Frog
+animalSounds_011,animalSounds_012,AB,Hourglass treefrog,Frog
+animalSounds_013,animalSounds_014,AB,Bow-winged grasshopper,Insect
+animalSounds_015,animalSounds_016,AB,Bow-winged grasshopper,Insect
+animalSounds_017,animalSounds_018,AB,Midwife toad,Frog
+animalSounds_019,animalSounds_020,AB,Pacific field cricket,Insect
+animalSounds_021,animalSounds_022,AB,Pacific field cricket,Insect
+animalSounds_023,animalSounds_024,AB,Pacific field cricket,Insect
+animalSounds_025,animalSounds_026,AB,Pacific field cricket,Insect
+animalSounds_027,animalSounds_028,AA,Tungara frog,Frog
+animalSounds_029,animalSounds_030,BB,Tungara frog,Frog
+animalSounds_027,animalSounds_029,AB,Tungara frog,Frog
+animalSounds_027,animalSounds_030,AB,Tungara frog,Frog
+animalSounds_028,animalSounds_029,AB,Tungara frog,Frog
+animalSounds_028,animalSounds_030,AB,Tungara frog,Frog
+animalSounds_031,animalSounds_032,AB,Tungara frog,Frog
+animalSounds_033,animalSounds_032,AB,Tungara frog,Frog
+animalSounds_034,animalSounds_032,AB,Tungara frog,Frog
+animalSounds_033,animalSounds_031,AB,Tungara frog,Frog
+animalSounds_034,animalSounds_031,AB,Tungara frog,Frog
+animalSounds_034,animalSounds_033,AB,Tungara frog,Frog
+animalSounds_035,animalSounds_036,AB,Colorado dwarf frog,Frog
+animalSounds_037,animalSounds_038,AB,Prairie warbler,Bird
+animalSounds_039,animalSounds_040,AB,Prairie warbler,Bird
+animalSounds_041,animalSounds_042,AB,Prairie warbler,Bird
+animalSounds_037,animalSounds_040,AB,Prairie warbler,Bird
+animalSounds_039,animalSounds_038,AB,Prairie warbler,Bird
+animalSounds_041,animalSounds_040,AB,Prairie warbler,Bird
+animalSounds_037,animalSounds_042,AB,Prairie warbler,Bird
+animalSounds_039,animalSounds_042,AB,Prairie warbler,Bird
+animalSounds_041,animalSounds_038,AB,Prairie warbler,Bird
+animalSounds_043,animalSounds_044,AB,Prairie warbler,Bird
+animalSounds_045,animalSounds_046,AB,Prairie warbler,Bird
+animalSounds_047,animalSounds_048,AB,Prairie warbler,Bird
+animalSounds_043,animalSounds_046,AB,Prairie warbler,Bird
+animalSounds_045,animalSounds_044,AB,Prairie warbler,Bird
+animalSounds_047,animalSounds_046,AB,Prairie warbler,Bird
+animalSounds_043,animalSounds_048,AB,Prairie warbler,Bird
+animalSounds_045,animalSounds_048,AB,Prairie warbler,Bird
+animalSounds_047,animalSounds_044,AB,Prairie warbler,Bird
+animalSounds_049,animalSounds_050,AA,Zebra finch,Bird
+animalSounds_051,animalSounds_052,AB,Zebra finch,Bird
+animalSounds_053,animalSounds_054,AB,Zebra finch,Bird
+animalSounds_055,animalSounds_056,AB,Zebra finch,Bird
+animalSounds_057,animalSounds_058,AB,Zebra finch,Bird
+animalSounds_059,animalSounds_060,AB,Zebra finch,Bird
+animalSounds_061,animalSounds_062,AB,Zebra finch,Bird
+animalSounds_063,animalSounds_064,AB,Zebra finch,Bird
+animalSounds_065,animalSounds_066,AB,Zebra finch,Bird
+animalSounds_067,animalSounds_068,AB,Zebra finch,Bird
+animalSounds_061,animalSounds_069,AB,Zebra finch,Bird
+animalSounds_063,animalSounds_070,AB,Zebra finch,Bird
+animalSounds_065,animalSounds_062,AB,Zebra finch,Bird
+animalSounds_067,animalSounds_064,AB,Zebra finch,Bird
+animalSounds_061,animalSounds_066,AB,Zebra finch,Bird
+animalSounds_063,animalSounds_068,AB,Zebra finch,Bird
+animalSounds_065,animalSounds_069,AB,Zebra finch,Bird
+animalSounds_067,animalSounds_070,AB,Zebra finch,Bird
+animalSounds_071,animalSounds_072,AB,Green tree frog,Frog
+animalSounds_073,animalSounds_071,AB,Green tree frog,Frog
+animalSounds_073,animalSounds_072,AB,Green tree frog,Frog
+animalSounds_071,animalSounds_074,AB,Green tree frog,Frog
+animalSounds_075,animalSounds_071,AB,Green tree frog,Frog
+animalSounds_075,animalSounds_074,AB,Green tree frog,Frog
+animalSounds_076,animalSounds_077,AB,Gelada,Mammal
+animalSounds_078,animalSounds_079,AB,Gelada,Mammal
+animalSounds_080,animalSounds_081,AB,Gelada,Mammal
+animalSounds_082,animalSounds_083,AB,Gelada,Mammal
+animalSounds_084,animalSounds_085,AB,Gelada,Mammal
+animalSounds_086,animalSounds_087,AB,Gelada,Mammal
+animalSounds_088,animalSounds_089,AB,Gelada,Mammal
+animalSounds_090,animalSounds_091,AB,Gelada,Mammal
+animalSounds_092,animalSounds_093,AB,Gelada,Mammal
+animalSounds_094,animalSounds_095,AB,Gelada,Mammal
+animalSounds_096,animalSounds_097,AB,Gelada,Mammal
+animalSounds_098,animalSounds_099,AB,Gelada,Mammal
+animalSounds_100,animalSounds_101,AB,Gelada,Mammal
+animalSounds_102,animalSounds_103,AB,Gelada,Mammal
+animalSounds_104,animalSounds_105,AB,Gelada,Mammal
+animalSounds_106,animalSounds_107,AB,Gelada,Mammal
+animalSounds_108,animalSounds_109,AB,Gelada,Mammal
+animalSounds_110,animalSounds_111,AB,Gelada,Mammal
+animalSounds_112,animalSounds_113,AB,Canary,Bird
+animalSounds_112,animalSounds_114,AB,Canary,Bird
+animalSounds_114,animalSounds_113,AB,Canary,Bird
+animalSounds_115,animalSounds_113,AB,Canary,Bird
+animalSounds_115,animalSounds_114,AB,Canary,Bird
+animalSounds_115,animalSounds_112,AA,Canary,Bird
+animalSounds_116,animalSounds_117,BA,Fruitfly,Insect
+animalSounds_116,animalSounds_118,BA,Fruitfly,Insect
+animalSounds_116,animalSounds_119,BB,Fruitfly,Insect
+animalSounds_117,animalSounds_118,BA,Fruitfly,Insect
+animalSounds_117,animalSounds_119,BB,Fruitfly,Insect
+animalSounds_118,animalSounds_119,AB,Fruitfly,Insect
+animalSounds_120,animalSounds_121,AB,Singing mouse,Mammal
+animalSounds_122,animalSounds_123,AB,Singing mouse,Mammal
+animalSounds_124,animalSounds_125,AB,Singing mouse,Mammal
+animalSounds_126,animalSounds_127,AB,Singing mouse,Mammal
+animalSounds_128,animalSounds_129,AB,Singing mouse,Mammal
+animalSounds_130,animalSounds_131,AB,Singing mouse,Mammal
+animalSounds_132,animalSounds_133,AB,Swamp sparrow,Bird
+animalSounds_134,animalSounds_135,AB,Swamp sparrow,Bird
+animalSounds_136,animalSounds_137,AB,Swamp sparrow,Bird
+animalSounds_138,animalSounds_139,AB,Swamp sparrow,Bird
+animalSounds_140,animalSounds_141,AB,Swamp sparrow,Bird
+animalSounds_142,animalSounds_143,AB,Swamp sparrow,Bird
+animalSounds_144,animalSounds_145,AB,Swamp sparrow,Bird
+animalSounds_146,animalSounds_147,AB,Swamp sparrow,Bird
+animalSounds_148,animalSounds_149,AB,Swamp sparrow,Bird
+animalSounds_150,animalSounds_151,AB,Swamp sparrow,Bird
+animalSounds_152,animalSounds_153,AB,Song sparrow,Bird
+animalSounds_154,animalSounds_155,AB,Song sparrow,Bird
+animalSounds_156,animalSounds_157,AB,Song sparrow,Bird
+animalSounds_158,animalSounds_159,AB,Song sparrow,Bird
+animalSounds_160,animalSounds_161,AB,Song sparrow,Bird
+animalSounds_162,animalSounds_163,AB,Song sparrow,Bird
+animalSounds_164,animalSounds_165,AB,Song sparrow,Bird
+animalSounds_166,animalSounds_167,AB,Song sparrow,Bird
+animalSounds_168,animalSounds_169,AB,Song sparrow,Bird
+animalSounds_170,animalSounds_171,AB,Song sparrow,Bird
+animalSounds_172,animalSounds_173,AB,Song sparrow,Bird
+animalSounds_154,animalSounds_174,AB,Song sparrow,Bird
+animalSounds_156,animalSounds_175,AB,Song sparrow,Bird
+animalSounds_160,animalSounds_176,AB,Song sparrow,Bird
+animalSounds_162,animalSounds_177,AB,Song sparrow,Bird
+animalSounds_164,animalSounds_152,AB,Song sparrow,Bird
+animalSounds_166,animalSounds_158,AB,Song sparrow,Bird
+animalSounds_168,animalSounds_178,AB,Song sparrow,Bird
+animalSounds_170,animalSounds_179,AB,Song sparrow,Bird
+animalSounds_180,animalSounds_181,AB,Song sparrow,Bird

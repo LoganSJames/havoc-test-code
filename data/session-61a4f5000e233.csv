@@ -1,0 +1,4 @@
+"rt","stimulus","response","trial_type","trial_index","time_elapsed","internal_node_id","selection","image_1","image_2","audio_1","audio_2","order","category","species"
+"2484.7999999523163","Click to begin","0","html-button-response","0","2498","0.0-0.0","","","","","","","",""
+"742","","","animal-sounds","1","12473","0.0-1.0","B","animal-sounds/img/bird.svg","animal-sounds/img/bird.svg","animal-sounds/sounds/animalSounds_156.mp3","animal-sounds/sounds/animalSounds_157.mp3","AB","Bird","Song sparrow"
+"447","","","animal-sounds","2","17871","0.0-2.0","B","animal-sounds/img/bird.svg","animal-sounds/img/bird.svg","animal-sounds/sounds/animalSounds_053.mp3","animal-sounds/sounds/animalSounds_054.mp3","AB","Bird","Zebra finch"

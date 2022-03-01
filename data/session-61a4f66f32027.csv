@@ -1,0 +1,4 @@
+"rt","stimulus","response","trial_type","trial_index","time_elapsed","internal_node_id","selection","image_1","image_2","audio_1","audio_2","order","category","species"
+"1777.2000000476837","Click to begin","0","html-button-response","0","1782","0.0-0.0","","","","","","","",""
+"610","","","animal-sounds","1","13726","0.0-1.0","B","animal-sounds/img/mammal.svg","animal-sounds/img/mammal.svg","animal-sounds/sounds/animalSounds_084.mp3","animal-sounds/sounds/animalSounds_085.mp3","AB","Mammal","Gelada"
+"1283","","","animal-sounds","2","21005","0.0-2.0","B","animal-sounds/img/insect.svg","animal-sounds/img/insect.svg","animal-sounds/sounds/animalSounds_021.mp3","animal-sounds/sounds/animalSounds_022.mp3","AB","Insect","Pacific field cricket"
