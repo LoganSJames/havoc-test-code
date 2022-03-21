@@ -37,7 +37,7 @@ jsPsych.plugins["animal-sounds"] = (function() {
       },
       listen_instr: {
         type: jsPsych.plugins.parameterType.STRING,
-        default: 'Listen to both sounds',
+        default: 'Listen to both songs',
       }
     },
   };
@@ -165,8 +165,8 @@ jsPsych.plugins["animal-sounds"] = (function() {
     btn.style.textAlign = 'center';
     var btn1 = btn.cloneNode();
     var btn2 = btn.cloneNode();
-    btn1.innerText = 'A';
-    btn2.innerText = 'B';
+    btn1.innerText = 'Song A';
+    btn2.innerText = 'Song B';
     display_element.appendChild(btn1);
     display_element.appendChild(btn2);
     // btn1.style.left = Math.round(s.w/4 - btn.clientWidth/2) + 'px';

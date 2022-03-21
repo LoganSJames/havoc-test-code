@@ -4,7 +4,7 @@ var timeline = [];
 
 timeline.push({
   type: 'html-button-response',
-  stimulus: 'Click to begin',
+  stimulus: '<p style="background-color:white;">Many animals use sounds to attract mates: the melodious songs of birds, the spectacular choruses of frogs, the fascinating trills of insects and even some songs in our closer mammal relatives are all used, at least in part, to attract members of the opposite sex.  When individuals are choosing among potential mates, scientists often find that some of these songs are more beautiful to the ears of the listeners than others.  We are interested in understanding what makes some songs more beautiful than others, and whether the preferences of one species are similar to the preferences of another.  In this study, you will listen to pairs of songs from another species of animal, and we will ask you which song you preferred listening to.  Some of these songs will sound quite strange to you; indeed, some are even synthetic songs.  The songs will be quite short, lasting from 1 - 8 seconds.  Simply go with your gut instinct on which of the two songs was most melodious to your ears.  For each pair, we know which song is preferred by members of that species, and at the end of the study, we will tell you which group of animals your preferences are closest to: birds, frogs, insects or mammals.  </p>',
   choices: ['<p style="font-size:5vw; color:green;">BEGIN</p>'],
 });
 
