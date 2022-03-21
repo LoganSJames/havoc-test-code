@@ -371,7 +371,7 @@ jsPsych.plugins["animal-sounds"] = (function() {
       } else if (ctrl == 'begin selection') {
         set_vis(left_side, 'visible');
         set_vis(right_side, 'visible');
-        p.innerHTML = '<p style="font-size:1.5vw;"><b>Click the side</b> or <b>press they key</b> corresponding to<br> the sound you <b><i>prefer</i></b></p>';
+        p.innerHTML = '<p style="font-size:1.5vw;"><b>Click the side</b> or <b>press the key</b> corresponding to<br> the sound you <b><i>prefer</i></b></p>';
         // Add clickable divs
         var d = document.createElement('div');
         d.style.position = 'absolute';
