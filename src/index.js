@@ -38,6 +38,10 @@ jsPsych.plugins["animal-sounds"] = (function() {
       listen_instr: {
         type: jsPsych.plugins.parameterType.STRING,
         default: 'Listen to both songs',
+      },
+      answer_instr: {
+        type: jsPsych.plugins.parameterType.STRING,
+        default: 'Choose a song',
       }
     },
   };
@@ -60,7 +64,8 @@ jsPsych.plugins["animal-sounds"] = (function() {
     var div_ppn = 0.6;
     var s = {h: document.body.clientHeight, w: document.body.clientWidth}; // Just for brevity
     s.m = Math.min(s.w, s.h);
-    var btn_ppn = s.h * (1 - div_ppn);
+    //var btn_ppn = s.h * (1-divn_ppn);  What ISAAC wrote
+    var btn_ppn = s.h * (-1);
     var img_ppn = s.h * div_ppn;
 
     // Containers for nodes on either side of the screen
@@ -165,8 +170,8 @@ jsPsych.plugins["animal-sounds"] = (function() {
     btn.style.textAlign = 'center';
     var btn1 = btn.cloneNode();
     var btn2 = btn.cloneNode();
-    btn1.innerText = 'Song A';
-    btn2.innerText = 'Song B';
+    btn1.innerText = 'F';
+    btn2.innerText = 'J';
     display_element.appendChild(btn1);
     display_element.appendChild(btn2);
     // btn1.style.left = Math.round(s.w/4 - btn.clientWidth/2) + 'px';
@@ -178,7 +183,7 @@ jsPsych.plugins["animal-sounds"] = (function() {
 
     // Prep instructions
     var p = document.createElement('p');
-    p.innerText = trial.listen_instr;
+    p.innerHTML = trial.listen_instr;
     display_element.appendChild(p);
 
     // Prep canvases for images
@@ -371,7 +376,7 @@ jsPsych.plugins["animal-sounds"] = (function() {
       } else if (ctrl == 'begin selection') {
         set_vis(left_side, 'visible');
         set_vis(right_side, 'visible');
-        p.innerHTML = '<p style="font-size:1.5vw;"><b>Click the side</b> or <b>press the key</b> corresponding to<br> the sound you <b><i>prefer</i></b></p>';
+        p.innerHTML = trial.answer_instr;
         // Add clickable divs
         var d = document.createElement('div');
         d.style.position = 'absolute';
@@ -382,8 +387,8 @@ jsPsych.plugins["animal-sounds"] = (function() {
         d2 = d.cloneNode();
         d1.style.left = '0px';
         d2.style.left = (s.w/2) + 'px';
-        d1.addEventListener('click', function() {selection_made('A')})
-        d2.addEventListener('click', function() {selection_made('B')})
+        d1.addEventListener('click', function() {selection_made('F')})
+        d2.addEventListener('click', function() {selection_made('J')})
         display_element.appendChild(d1);
         display_element.appendChild(d2);
         /*
@@ -399,7 +404,7 @@ jsPsych.plugins["animal-sounds"] = (function() {
         selection_start_time = Date.now();
         document.onkeydown = function(info) {
           var key = info.key.toUpperCase();
-          if (key == 'A' || key == 'B') {
+          if (key == 'F' || key == 'J') {
             document.onkeydown = null;
             selection_made(key);
           }

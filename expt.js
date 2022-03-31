@@ -4,7 +4,7 @@ var timeline = [];
 
 timeline.push({
   type: 'html-button-response',
-  stimulus: '<p style="background-color:white;">Many animals use sounds to attract mates: the melodious songs of birds, the spectacular choruses of frogs, the fascinating trills of insects and even some songs in our closer mammal relatives are all used, at least in part, to attract members of the opposite sex.  When individuals are choosing among potential mates, scientists often find that some of these songs are more beautiful to the ears of the listeners than others.  We are interested in understanding what makes some songs more beautiful than others, and whether the preferences of one species are similar to the preferences of another.  In this study, you will listen to pairs of songs from another species of animal, and we will ask you which song you preferred listening to.  Some of these songs will sound quite strange to you; indeed, some are even synthetic songs.  The songs will be quite short, lasting from 1 - 8 seconds.  Simply go with your gut instinct on which of the two songs was most melodious to your ears.  For each pair, we know which song is preferred by members of that species, and at the end of the study, we will tell you which group of animals your preferences are closest to: birds, frogs, insects or mammals.  </p>',
+  stimulus: '<p style="font-size:1.5vw;">Many animals use sounds to attract others.  Here, you will find out which type of animal you are most similar to!</p><p>You can respond with the keyboard by placing one finger on the F key and one finger on the J key, or you can respond by clicking<br/><img style="height:128px;" src="img/keyboard.jpg" alt="Keyboard with the F and J keys highlighted in yellow"/></p>',
   choices: ['<p style="font-size:5vw; color:green;">BEGIN</p>'],
 });
 
@@ -15,11 +15,14 @@ var bird_stim = jsPsych.randomization.sampleWithReplacement(bird_list, 4);
 var stim_list = mammal_stim.concat(frog_stim,insect_stim,bird_stim);
 var trial_stim = jsPsych.randomization.shuffle(stim_list);
 
+var listenList = ['is more <b>beautiful</b>', 'you <b>prefer</b>', 'you <b>like</b> more','is more <b>enjoyable</b> to hear','is more <b>impressive</b>','would <b>attract</b> that animal','is more <b>interesting</b>','is more <b>pleasant</b>','is more <b>melodious</b>','the <b>animal</b> would prefer','the animal would find more <b>impressive</b>'];
+
 //var trial_stim = jsPsych.randomization.sampleWithReplacement(stim_list, 12);
 
 var i, curr_trial, curr_im;
 for (i = 0; i < trial_stim.length; i++) {
 	curr_im = trial_stim[i].Category.toLowerCase() + '.svg';
+  currInstruction = jsPsych.randomization.sampleWithReplacement(listenList,1);
 	curr_trial = {
 		type: 'animal-sounds',
 		image_1: 'img/' + curr_im,
@@ -29,6 +32,8 @@ for (i = 0; i < trial_stim.length; i++) {
 		order: trial_stim[i].Quality,
 		image_animation: jsPsych.randomization.sampleWithReplacement(['jump', 'slide'], 1),
 		sound_animation: jsPsych.randomization.sampleWithReplacement(['grow', 'flash'], 1),
+    listen_instr: '<p style="font-size:1.5vw;">Think about which song ' + currInstruction + '</p>',
+    answer_instr: '<p style="font-size:1.5vw;"><i>Click</i> the side or <i>press</i> the key for<br> the song you think ' + currInstruction + '</p>',
 		data: {
 			category: trial_stim[i].Category,
 			species: trial_stim[i].Species
@@ -89,7 +94,7 @@ var info_trial = {
 			n_correct = 0;
 			n_total = 0;
 			for (j = 0; j < curr_subset.count(); j++) {
-				if (((selections[j] == 'A') & (orders[j] == 'AB')) | ((selections[j] == 'B') & (orders[j] == 'BA'))) {
+				if (((selections[j] == 'F') & (orders[j] == 'AB')) | ((selections[j] == 'J') & (orders[j] == 'BA'))) {
 					n_correct += 1;
 				}
 				if ((orders[j] == 'AB') | (orders[j] == 'BA')) {
