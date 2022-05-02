@@ -325,7 +325,7 @@ jsPsych.plugins["animal-sounds"] = (function() {
           function() {
             ctrl_fcn('play left');
           },
-          1000
+          1500 //This is the amount of time before the first song plays
         );
       } else if (ctrl == 'play left') {
         audio_ended = false;
@@ -337,7 +337,7 @@ jsPsych.plugins["animal-sounds"] = (function() {
               function() {
                 ctrl_fcn('play right');
               },
-              1000
+              1000 //This is the amount of time between songs
             )
           }
         );
@@ -360,7 +360,7 @@ jsPsych.plugins["animal-sounds"] = (function() {
               function() {
                 ctrl_fcn('begin selection');
               },
-              1000
+              100 // Time after the second song
             )
           }
         );

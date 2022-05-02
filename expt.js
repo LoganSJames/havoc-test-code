@@ -15,7 +15,7 @@ var bird_stim = jsPsych.randomization.sampleWithReplacement(bird_list, 4);
 var stim_list = mammal_stim.concat(frog_stim,insect_stim,bird_stim);
 var trial_stim = jsPsych.randomization.shuffle(stim_list);
 
-var listenList = ['is more <b>beautiful</b>', 'you <b>prefer</b>', 'you <b>like</b> more','is more <b>enjoyable</b> to hear','is more <b>impressive</b>','would <b>attract</b> that animal','is more <b>interesting</b>','is more <b>pleasant</b>','is more <b>melodious</b>','the <b>animal</b> would prefer','the animal would find more <b>impressive</b>'];
+var listenList = ['is more <b>beautiful</b>', 'you <b>prefer</b>', 'you <b>like</b> more','is more <b>enjoyable</b> to hear','is more <b>impressive</b>','would <b>attract</b> that animal','is more <b>interesting</b>','the <b>animal</b> would prefer','the animal would find more <b>impressive</b>'];
 
 //var trial_stim = jsPsych.randomization.sampleWithReplacement(stim_list, 12);
 
