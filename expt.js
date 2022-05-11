@@ -4,7 +4,7 @@ var timeline = [];
 
 timeline.push({
   type: 'html-button-response',
-  stimulus: '<p style="font-size:1.5vw;">Many animals use sounds to attract others.  Here, you will find out which type of animal you are most similar to!</p><p>You can respond with the keyboard by placing one finger on the F key and one finger on the J key, or you can respond by clicking<br/><img style="height:128px;" src="img/keyboard.jpg" alt="Keyboard with the F and J keys highlighted in yellow"/></p>',
+  stimulus: '<div class="imgbox"><img class="center-fit" src="./img/frontPage.png"></div><br/><p class="whiteBack" style="font-size:25px;">Many animals use sounds to attract others.  Here, you will find out which type of animal you are most similar to!</p><br/><p class="whiteBack">You can respond with the keyboard by placing one finger on the F key and one finger on the J key, or you can respond by clicking</p><img style="height:128px;" src="img/keyboard.jpg" alt="Keyboard with the F and J keys highlighted in yellow"/>',
   choices: ['<p style="font-size:5vw; color:green;">BEGIN</p>'],
 });
 
@@ -17,11 +17,19 @@ var trial_stim = jsPsych.randomization.shuffle(stim_list);
 
 var listenList = ['is more <b>beautiful</b>', 'you <b>prefer</b>', 'you <b>like</b> more','is more <b>enjoyable</b> to hear','is more <b>impressive</b>','would <b>attract</b> that animal','is more <b>interesting</b>','the <b>animal</b> would prefer','the animal would find more <b>impressive</b>'];
 
+var birdWinnerText = '<div class="imgbox"><img class="center-fit" src="./img/birdWinner.png"></div><br/><p class="whiteBack">Birds are highly social creatures, and they use their songs to recognize each other, attract potential mates, and defend their territories.  Your brain may have picked up on the subtle differences between songs that can make one song sound more beautiful to other birds!  Differences in the <i><b>complexity</i></b> of sounds can be particularly important for birds like the <b>prairie warbler</b> and <b>zebra finch</b>.</p>'
+
+var insectWinnerText = '<div class="imgbox"><img class="center-fit" src="./img/insectWinner.png"></div>'
+
+var frogWinnerText = '<div class="imgbox"><img class="center-fit" src="./img/frogWinner.png"></div>'
+
+var mammalWinnerText = '<div class="imgbox"><img class="center-fit" src="./img/mammalWinner.png"></div>'
+
 //var trial_stim = jsPsych.randomization.sampleWithReplacement(stim_list, 12);
 
 var i, curr_trial, curr_im;
 for (i = 0; i < trial_stim.length; i++) {
-	curr_im = trial_stim[i].Category.toLowerCase() + '.svg';
+	curr_im = trial_stim[i].Category.toLowerCase() + '.png';
   currInstruction = jsPsych.randomization.sampleWithReplacement(listenList,1);
 	curr_trial = {
 		type: 'animal-sounds',
@@ -118,13 +126,40 @@ var info_trial = {
 			}
 		}
 		if (max_cat == 'none') {
-			trial.stimulus = "Your preferences weren't similar to those of any of the animals!";
-		} else {
-
-			trial.stimulus = 'Your preferences were most similar to those of ' + max_cat + 's!</br><img src="./img/'+max_cat.toLowerCase()+'.svg"></img>';
+			var catList = ['Bird','Mammal','Insect','Frog'];
+      var rand = random = Math.floor(Math.random() * catList.length);
+      max_cat = catList[rand];
 		}
 
+		trial.stimulus = 'Congratulations!!  You matched with ' + max_cat + 's!</br>';
+
+    if (max_cat == 'Bird'){
+      trial.stimulus += birdWinnerText;
+    }
+    if (max_cat == 'Mammal'){
+      trial.stimulus += mammalWinnerText;
+    }
+    if (max_cat == 'Frog'){
+      trial.stimulus += frogWinnerText;
+    }
+    if (max_cat == 'Insect'){
+      trial.stimulus += insectWinnerText;
+    }
+
+    function copyURI(evt) {
+        evt.preventDefault();
+        navigator.clipboard.writeText(evt.target.getAttribute('href')).then(() => {
+          /* clipboard successfully set */
+        }, () => {
+          /* clipboard write failed */
+        });
+    }
+
+    trial.stimulus+='<br/><p style="whiteBack"><button onClick="window.location.reload();">Play again</button> or share your result:</p><a href="https://twitter.com/intent/tweet?text=I%20matched%20with%20'+max_cat.toLowerCase()+'s!%20%20Which%20animal%20are%20you?%20https%3A//logansjames.github.io/"><img width="77" height="63" src="./img/twitter.png" alt="Share on Twitter"></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//logansjames.github.io/"><img width="77" height="77" src="./img/fb.png" alt="Share on Facebook"></a>'
+
+
 		// Display info from each trial
+    /*
     var i;
     for (i = 0; i < corr_by_cat.length; i++) {
 				trial.stimulus += 'You were ' + Math.round(corr_by_cat[i].ppn_corr * 100) + ' percent similar to '+ corr_by_cat[i].cat + 's</br>';
@@ -146,6 +181,7 @@ var info_trial = {
           trial.stimulus += species_list[i];
           trial.stimulus += '</div><br>';
 		}
+    */
 
 	}
 }
