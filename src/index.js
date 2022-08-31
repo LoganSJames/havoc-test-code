@@ -325,7 +325,7 @@ jsPsych.plugins["animal-sounds"] = (function() {
           function() {
             ctrl_fcn('play left');
           },
-          1500 //This is the amount of time before the first song plays
+          2000 //This is the amount of time before the first song plays
         );
       } else if (ctrl == 'play left') {
         audio_ended = false;
